@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html lang="en" ng-app="peopleGallery">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>People Search</title>
+	<link href="css/peopleSearch.css" rel="stylesheet">
+    <script src="lib/angular.min.js"></script>
+    <script src="app.js"></script>
+	<script src="service/gallaryService.js"></script>
+</head>
+<body>
+    <div class="container" ng-controller="peopleCtrl">
+		<div class="row">
+			<h1>People Search</h1>
+			<div class="col-md-12">
+				<input type="text" class="form-control" placeholder="search image here" ng-model="imageName">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12 col-sm-6 col-md-4 text-center" ng-repeat="image in peopleGalry | filter:imageName">
+				<img src="{{image.url}}">
+				<div>{{image.name}}</div>
+			</div>
+		</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+{
+	"imageList":[
+		{  
+			"name": "sean",
+			"url": "img/sean.png"
+		},
+		{  
+			"name": "yaw",
+			"url": "img/yaw.png"
+		},
+		{  
+			"name": "lucy",
+			"url": "img/lucy.png"
+		},
+		{  
+			"name": "eric",
+			"url": "img/eric.png"
+		},
+		{  
+			"name": "rory",
+			"url": "img/rory.png"
+		},
+		{  
+			"name": "hayley",
+			"url": "img/hayley.png"
+		}
+	]
+}
